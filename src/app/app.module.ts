@@ -6,6 +6,11 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SocialIconsComponent } from './social-icons/social-icons.component';
 
+import { MatMenuModule, MatButtonModule, MatIconModule, MatCardModule } from '@angular/material';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatGridListModule } from '@angular/material';
+import { MatInputModule, MatFormFieldModule } from '@angular/material';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +19,17 @@ import { SocialIconsComponent } from './social-icons/social-icons.component';
     SocialIconsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatMenuModule, MatButtonModule, MatIconModule, MatCardModule,
+    MatProgressSpinnerModule,
+    MatGridListModule,
+    MatInputModule, MatFormFieldModule
+  ],
+  exports: [
+    MatMenuModule, MatButtonModule, MatIconModule, MatCardModule,
+    MatProgressSpinnerModule,
+    MatGridListModule,
+    MatInputModule, MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
